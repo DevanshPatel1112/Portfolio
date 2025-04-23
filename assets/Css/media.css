@@ -16,6 +16,9 @@
     .portfolio .container .gallery{
         gap: 12px !important;
     }
+    .review-circle{
+        width: 50% !important;
+    }
 }
 
 @media (min-width:576px) {
@@ -45,6 +48,10 @@
         height: 360px;
         width: 360px;
         bottom: 95px;
+    }
+
+    .review-circle{
+        width: 10% !important;
     }
 
     .portfolio-btn{
