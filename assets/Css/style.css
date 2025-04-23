@@ -1,0 +1,662 @@
+*{
+    font-family: 'Rajdhani';
+    list-style: none !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+}
+
+:root{
+    --primary-background-color: #060606;
+    --background-color: rgb(55,6,21);
+    background: linear-gradient(90deg, rgba(55,6,21,1) 0%, rgba(10,6,7,1) 50%, rgba(55,6,21,1) 95%);
+    --hover-color: #ff014f;
+    --hover-bg:#f1175833;
+    --color-white: #ffffff;
+    --color-gray: #9f9f9f;
+    --border-color-footer: #9f9f9f33;
+    --insta-logo:   #da09b1;
+    --social-links-bg: #ffffff10;
+    --hover-bg-transparent: transparent;
+    --paragraph-text-color: #787777;
+    --dropdown-bg-color: #141414;
+    --offcanvas-contact-border: #ffffff14;
+    --experience-card-border-color: #ffffff0d;
+    --experience-card-background-color: #1616164d;
+    --experience-card-box-shadow-color: #fdc4480a;
+    --background-circle-color: #8b042d;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+*[class^="col-"] 
+    {
+        padding: 0px 12px;
+}
+
+body{
+    background-color: var(--hover-bg-transparent) !important;
+}
+
+.hover{
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    padding: 5px;
+}
+.hover:hover{
+    color: var(--hover-color) !important;
+    background-color: var(--hover-bg);
+    padding: 5px;
+}
+.hover-2:hover{
+    background-color: var(--hover-color);
+}
+.hover-btn:hover{
+    background-color: transparent;
+    border: 1px solid var(--hover-color) !important;
+    color: var(--hover-color);
+}
+.parent-dropdown .dropdown li:hover{
+    background-color: var(--hover-bg); 
+}
+.parent-dropdown .dropdown li a:hover{
+    color: var(--hover-color) !important;
+    padding: 5px;
+}
+
+/************************************* Header *************************************/
+.header{
+    /* background-color: var(--background-color); */
+    background-image: url(../Images/portfolio-header-bg.png);
+}
+.social-links a{
+    width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    position: relative;
+    transition: all 1s ease;
+    background-color: var(--social-links-bg);
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.social-links-header a{
+    width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    position: relative;
+    transition: all 1s ease;
+    background-color: var(--social-links-bg);
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.quick-service{
+    width: 40px;
+    height: 40px;
+    color: var(--color-white);
+    position: relative;
+    transition: all 1s ease;
+    background-color: var(--hover-color);
+    border: 2px solid var(--hover-color);
+    font-size: 20px;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.quick-service:hover{
+    background-color: var(--hover-bg-transparent)
+}
+.parent-dropdown{
+    position: relative;
+}
+.parent-dropdown:hover .dropdown{
+    visibility: visible;
+    opacity: 1;
+    transform:  translateY(0px) scaleY(1);
+}
+
+.dropdown li{
+    z-index: 999;
+}
+.dropdown{
+    position: absolute;
+    width: 150px;
+    background-color: var(--dropdown-bg-color);
+    top: 40px;
+    visibility: hidden;
+    opacity: 0;
+    transform:  translateY(-10px) scaleY(0.3);
+    transition: all 0.2s linear;
+}
+.offcanvas-header{
+    background: var(--dropdown-bg-color);
+}
+.close-btn i{
+    color: var(--color-white);
+    font-size: 20px;
+}
+.offcanvas-body{
+    background: var(--dropdown-bg-color);
+}
+.icon-box{
+    height: 45px;
+    width: 45px;
+    background: var(--hover-bg-transparent);
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid var(--offcanvas-contact-border);
+}
+.details span{
+    font-size: 18px;
+}
+.details .span{
+    font-size: 18px;
+    font-size: 18px;
+}
+
+/************************************* Header *************************************/
+
+/************************************* Hero Section *************************************/
+.hero-section{
+    background-image: url(../Images/portfolio-header-bg.png);
+    margin-top: 90px !important;
+}
+.name{
+    color: var(--color-white);
+    font-size: 54px;
+    line-height: 1.3;
+}
+.hero-left .h1{
+    color: var(--hover-color);
+    font-size: 54px;
+    line-height: 1.3;
+}
+.hero-left span{
+    color: var(--hover-color);
+}
+.hero-left p{
+    color: var(--paragraph-text-color);
+    font-size: 20px;
+    line-height: 34px;
+}
+.btn-1{
+    padding: 0px 30px;
+    background: var(--hover-color);
+    color: var(--color-white);
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid var(--hover-color) !important;
+}
+
+/* Hero Right */
+.hero-right span{
+    right: 150px;
+}
+.fsd-1{
+    bottom: -100px;
+}
+.fsd-2{
+    top: 300px;
+}
+.banner-red-bg{
+    top: 195px;
+}
+.owner{
+    max-width: 100%;
+    height: auto;
+}
+/* Hero Right */
+/************************************* Hero Section *************************************/
+
+.bio{
+    background-color: var(--primary-background-color);
+}
+
+/************************************* About-Me Section *************************************/
+
+.about-me{
+    background-color: var(--primary-background-color);
+}
+
+/* about-me-left */
+.background-circle{
+    background-color: var(--background-circle-color);
+    border-radius: 50%;
+    height: 400px;
+    width:  400px;
+    position: absolute;
+    bottom: 48px;
+    left: 225px;
+}
+.experience-card{
+    border-radius: 20px;
+    border: 0.5px solid var(--experience-card-border-color);
+    background: var(--experience-card-background-color);
+    box-shadow: 15px 26.023px 50px 0px var(--experience-card-box-shadow-color);
+    backdrop-filter: blur(35px);
+    padding: 64px 80px;
+}
+.experience-months{
+    line-height: 1.23;
+    font-size: 80px !important;
+}
+.experience-duration{
+    line-height: 1.23;
+    font-size: 59px !important;
+}
+.design-card{
+    gap: 30px;
+    border-radius: 20px;
+    border: 0.5px solid var(--experience-card-border-color);
+    background: var(--experience-card-background-color);
+    box-shadow: 15px 26.023px 50px 0px var(--experience-card-box-shadow-color);
+    backdrop-filter: blur(35px);
+    padding: 30px;
+    margin-top: 30px;
+}
+.design-card-img{
+    border-radius: 100% !important;
+    border: 2px solid var(--offcanvas-contact-border);
+}
+.design-card-img i{
+    color: var(--hover-color);
+    font-size: 40px;
+}
+.card-title{
+    font-size: 27px;
+    line-height: 1.14;
+}
+.card-title a{
+    color: var(--hover-color);
+}
+
+.card-dsc{
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+/* about-me-left */
+
+/* abt-me */
+.abt-me{
+    color: var(--hover-color);
+}
+/* abt-me */
+
+/* More-About-Me */
+.bg-box{
+    background-color: var(--dropdown-bg-color);
+}
+.icon-circle{
+    border-radius: 100%;
+    background-color: var(--hover-color);
+}
+/* More-About-Me */
+
+/************************************* About-Me Section *************************************/
+
+/************************************* Education Section *************************************/
+
+.education{
+    background-color: var(--primary-background-color);
+}
+
+/* top */
+.education-top i{
+    color: var(--hover-color) !important;
+}
+/* top */
+
+/* body */
+.qualification-box{
+    margin-bottom: 30px;
+    padding: 20px 30px;
+    background: var(--dropdown-bg-color);
+    transition: all 0.5s cubic-bezier(0.19, 0.01, 0.83, 0.99);
+    background-size: 200% auto;
+}
+.qualification-box .time{
+    color: var(--hover-color);
+    font-size: 20px;
+    margin-top: 8px;
+    gap: 12px;
+}
+.qualification-box .resume-title{
+    font-size: 25px;
+    margin-bottom: 8px;
+    line-height: 1.14;
+}
+.qualification-box:hover{
+    background: #141414;
+    background: linear-gradient(90deg, rgba(20, 20, 20, 1) 86%, rgba(255, 1, 79, 1) 100%);
+    background-size: 100% auto;
+}
+.institute{
+    color: #929696 !important;
+}
+/* body */
+
+
+/************************************* Education Section *************************************/
+
+
+/************************************* Skills Section *************************************/
+.skills{
+    background-color: var(--primary-background-color);
+}
+.skills .container .row .col-md-6 span{
+    color: var(--hover-color);
+    letter-spacing: 1px;
+}
+.software {
+    backdrop-filter: blur(200px);
+    height: calc(100% - 30px);
+    margin-bottom: 30px;
+    background-position: left top;
+    border: 1px solid var(--experience-card-border-color);
+    border-radius: 20px;
+    gap: 15px;
+    padding: 12 25px;
+    transition: 0.2s linear;
+}
+.software-icon-box{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+}
+.software-icon-box i{
+    color: var(--hover-color);
+    font-size: 40px;
+}
+/************************************* Skills Section *************************************/
+
+/************************************* Portfolio Section *************************************/
+
+.portfolio{
+    background-color: var(--primary-background-color);
+}
+.portfolio .container span{
+    color: var(--hover-color);
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+.portfolio .container p{
+    margin-top: 10px;
+    line-height: 26px;
+    font-size: 16px;
+}
+
+
+.btn-active{
+    padding: 1px 22px;
+    background: var(--hover-color) !important;
+}
+.portfolio-btn:hover{
+    padding: 1px 22px;
+    background: var(--hover-color);
+}
+
+.portfolio-btn{
+    padding: 1px 22px;
+    transition: all 0.4s ease-in-out;
+    background-color: #151415;
+    cursor: pointer;
+}
+/************************************* Filter Gallery *************************************/
+/************************************* Filter Gallery *************************************/
+
+
+/************************************* Portfolio Section *************************************/
+
+/***************************************** Testimonal Section *************************************/
+.testimonial{
+    background-color: var(--primary-background-color);
+}
+.testimonial .container span{
+    color: var(--hover-color);
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+/* Contact Form */
+.form{
+    background-color: var(--primary-background-color);
+}
+.contact-form{
+    background-color: var(--dropdown-bg-color);
+}
+.contact-form .col-lg-6 , .col-lg-12{
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+.form-left h2{
+    padding-bottom: 22px;
+    line-height: 78px;
+    font-size: 68px;
+}
+.form-contact-info li{
+    margin-bottom: 22px !important;
+    gap: 15px;
+    line-height: 1.75;
+    font-size: 16px;
+}
+.form-icon-box{
+    border: 1px solid var(--offcanvas-contact-border);
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    min-height: 40px;
+    background: var(--hover-bg-transparent);
+    border-radius: 100px;
+}
+.form-icon-box i{
+    font-weight: 900;
+}
+.information .heading{
+    font-size: 18px;
+    line-height: 160%;
+}
+.information a{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.form-right h2{
+    padding-bottom: 22px;
+    line-height: 78px;
+    font-size: 48px;
+}
+.form-group{
+    border: none !important;
+}
+.input-field{
+    background: var(--hover-bg-transparent);
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid var(--offcanvas-contact-border);
+}
+.contact-now-btn{
+    padding: 0px 30px;
+    background: var(--hover-color);
+    color: var(--color-white);
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid var(--hover-color) !important;
+}
+/* Contact Form */
+
+/* Slider */
+.slider-box{
+    background-color: var(--primary-background-color);
+    border-radius: 20px;
+    border: 2px solid var(--offcanvas-contact-border);
+    position: relative;
+    padding: 100px 60px 60px 60px;
+}
+.testimonial-slider .slick-prev{
+    left: 0 !important;
+    z-index: 5 !important;
+}
+.testimonial-slider .slick-next{
+    right: 0 !important;
+}
+.review-circle{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 10% !important;
+}
+.rating i{
+    color: var(--hover-color);
+    font-size: 30px;
+    /* margin-bottom: 30px;
+    padding-bottom: 30px; */
+}
+.review-sub-title{
+    color: var(--color-gray) !important;
+}
+/* Slider */
+
+/***************************************** Testimonal Section *************************************/
+
+/***************************************** Blogs Section *************************************/
+.blog {
+    background-color: var(--primary-background-color);
+    padding-bottom: 80px;
+}
+.blog span{
+    color: var(--hover-color);
+}
+.blog-card{
+    border-radius: 20px;
+    background: var(--dropdown-bg-color);
+}
+.card-img-box{
+    border-radius: 20px;
+}
+.card-img-box a img{
+    transition: all 0.4s ease-in-out;
+    max-width: 100%;
+}
+.blog-card-img span{
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 27px;
+    background: #141414cc;
+    padding: 5px 20px;
+    border-radius: 0px 10px 10px 0px;
+    z-index: 10;
+}
+.blog-content{
+    padding: 20px 40px 40px 40px;
+}
+.blogger span{
+    font-size: 14px;
+    line-height: 24px;
+}
+.blog-title{
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+.read-btn{
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 1.28px;
+}
+.read-btn a{
+    line-height: 47px;
+    padding: 7px 25px;
+    font-size: 14px;
+    background: var(--hover-bg-transparent);
+    border: 2px solid var(--offcanvas-contact-border);
+    color: var(--color-gray);
+    border-radius: 500px !important;
+    letter-spacing: 0.5px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+/***************************************** Blogs Section *************************************/
+
+/***************************************** Footer *************************************/
+footer{
+    padding: 120px 0px;
+    background-color: var(--dropdown-bg-color);
+}
+.footer-logo{
+    margin-bottom: 30px;
+}
+.footer-dsc{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: var(--color-gray);
+}
+.content h5{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 30px;
+}
+.newsletter{
+    padding: 40px 40px 30px 40px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color-footer);
+}
+.newsletter-title{
+    font-size: 24px;
+    line-height: 30px;
+}
+.newsletter .para{
+    margin: 7px 0 0 0;
+    color: var(--color-gray);
+    font-size: 16px;
+    line-height: 30px;
+}
+.newsletter-form input{
+    background: var(--hover-bg-transparent);
+}
+.newsletter-form{
+    border-radius: 999px;
+    border: 1px solid var(--border-color-footer);
+    padding: 15px 5px 15px 30px;
+    margin-top: 20px;
+    background: var(--hover-bg-transparent) ;
+}
+.newsletter form span{
+    background: var(--hover-color);
+    min-width: 52px;
+    min-height: 52px;
+    border-radius: 100px;
+}
+.newsletter form span i{
+    font-weight: 900;
+    color: var(--color-white);
+    z-index: 999;
+}
+/***************************************** Footer *************************************/
